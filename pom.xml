@@ -18,20 +18,6 @@
 		<slf4j.version>1.7.6</slf4j.version>
 	</properties>
 
-	<!-- Dependency management. Please do not specify version numbers here; 
-		refer to the properties instead! -->
-	<dependencyManagement>
-		<dependencies>
-		</dependencies>
-	</dependencyManagement>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-			</plugins>
-		</pluginManagement>
-	</build>
-
 	<distributionManagement>
 		<!-- As of right now there is no public Maven repository for this project; 
 			just deploy to a temporary directory. -->
