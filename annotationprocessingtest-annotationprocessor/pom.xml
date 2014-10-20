@@ -8,10 +8,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>annotationprocessingtest-annotation</artifactId>
+	<artifactId>annotationprocessingtest-annotationprocessor</artifactId>
 
 	<packaging>jar</packaging>
-	<name>Project containing an annotation.</name>
+	<name>Project containing an annotation processor.</name>
 
 	<properties>
 		<!-- Version numbers. Please keep these sorted in alphabetical order. -->

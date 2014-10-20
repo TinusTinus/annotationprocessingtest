@@ -9,6 +9,7 @@
 
 	<modules>
 		<module>annotationprocessingtest-annotation</module>
+		<module>annotationprocessingtest-annotationprocessor</module>
 		<module>annotationprocessingtest-code</module>
 		<module>annotationprocessingtest-morecode</module>
 	</modules>
