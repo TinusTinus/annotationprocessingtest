@@ -1,32 +1,28 @@
 package nl.mvdr.annotationprocessingtest.processor;
 
-import java.util.Collections;
 import java.util.Set;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;
-import javax.lang.model.element.Element;
+import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.annotation.processing.SupportedOptions;
 import javax.lang.model.element.TypeElement;
-
-import nl.mvdr.annotationprocessingtest.annotation.ExampleAnnotation;
 
 /**
  * Annotation processor.
  * 
  * @author Martijn van de Rijdt
  */
+@SupportedAnnotationTypes({ "nl.mvdr.annotationprocessingtest.annotation.ExampleAnnotation" })
+@SupportedOptions({ "testOption" })
 public class ExampleAnnotationProcessor extends AbstractProcessor {
-    /** {@inheritDoc} */
-    @Override
-    public Set<String> getSupportedAnnotationTypes() {
-        String name = ExampleAnnotation.class.getName();
-        return Collections.singleton(name);
-    }
-
     /** {@inheritDoc} */
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         if (!annotations.isEmpty()) {
+            // print option values
+            System.out.println("Options: " + processingEnv.getOptions());
+            
             // print and process all classes carrying our annotation
             System.out.println("");
             System.out.println("Annotated classes: ");
