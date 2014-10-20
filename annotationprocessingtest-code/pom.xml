@@ -30,6 +30,9 @@
 					<annotationProcessors>
 						<annotationProcessor>nl.mvdr.annotationprocessingtest.processor.ExampleAnnotationProcessor</annotationProcessor>
 					</annotationProcessors>
+					<compilerArguments>
+						<AtestOption>dummyValue</AtestOption>
+					</compilerArguments>
 				</configuration>
 
 				<dependencies>
