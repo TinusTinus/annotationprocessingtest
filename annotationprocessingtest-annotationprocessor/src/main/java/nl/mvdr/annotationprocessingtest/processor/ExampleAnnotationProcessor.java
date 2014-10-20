@@ -23,7 +23,7 @@ public class ExampleAnnotationProcessor extends AbstractProcessor {
             // print option values
             System.out.println("Options: " + processingEnv.getOptions());
             
-            // print and process all classes carrying our annotation
+            // print all classes carrying our annotation
             System.out.println("");
             System.out.println("Annotated classes: ");
             System.out.println("");
