@@ -21,6 +21,6 @@ public class ExampleTypeReporter implements TypeReporter {
     /** {@inheritDoc} */
     @Override
     public void reportTypeAnnotation(Class<? extends Annotation> annotation, String className) {
-        System.out.println("Annotation found on class: " + className);
+        System.out.println("Annotation " + annotation + " found on class " + className);
     }
 }
