@@ -10,6 +10,7 @@
 	<modules>
 		<module>annotationprocessingtest-annotation</module>
 		<module>annotationprocessingtest-code</module>
+		<module>annotationprocessingtest-morecode</module>
 	</modules>
 
 	<properties>
