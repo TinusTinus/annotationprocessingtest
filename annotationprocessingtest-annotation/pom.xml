@@ -11,7 +11,8 @@
 	<artifactId>annotationprocessingtest-annotation</artifactId>
 
 	<packaging>jar</packaging>
-	<name>Project containing an annotation.</name>
+	<name>Annotation Processing Test Annotations</name>
+	<description>Project containing an annotation.</description>
 
 	<properties>
 		<!-- Version numbers. Please keep these sorted in alphabetical order. -->

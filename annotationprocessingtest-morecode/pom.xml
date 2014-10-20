@@ -11,7 +11,8 @@
 	<artifactId>annotationprocessingtest-morecode</artifactId>
 
 	<packaging>jar</packaging>
-	<name>Some more test code for messing around with annotation processors.</name>
+	<name>Annotation Processing Test More Code</name>
+	<description>Some more test code for messing around with annotation processors.</description>
 
 	<properties>
 		<!-- Version numbers. Please keep these sorted in alphabetical order. -->

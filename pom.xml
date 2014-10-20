@@ -5,7 +5,8 @@
 	<artifactId>annotationprocessingtest-parent</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Test project for messing around with annotation processors.</name>
+	<name>Annotation Processing Test</name>
+	<description>Test project for messing around with annotation processors.</description>
 
 	<modules>
 		<module>annotationprocessingtest-annotation</module>
