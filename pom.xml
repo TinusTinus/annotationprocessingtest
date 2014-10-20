@@ -13,6 +13,7 @@
 		<module>annotationprocessingtest-annotationprocessor</module>
 		<module>annotationprocessingtest-code</module>
 		<module>annotationprocessingtest-morecode</module>
+		<module>annotationprocessingtest-annotationdetector</module>
 	</modules>
 
 	<properties>
