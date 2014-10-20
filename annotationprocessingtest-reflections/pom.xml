@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>nl.mvdr.annotationprocessingtest</groupId>
+		<artifactId>annotationprocessingtest-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>annotationprocessingtest-reflections</artifactId>
+
+	<packaging>jar</packaging>
+	<name>Annotation Processing Test reflections</name>
+	<description>Project for trying out the reflections library.</description>
+
+	<properties>
+		<!-- Version numbers. Please keep these sorted in alphabetical order. -->
+		<java.version>1.8</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>nl.mvdr.annotationprocessingtest</groupId>
+			<artifactId>annotationprocessingtest-code</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<!-- downside to this dependency: it pulls in all of Guava as well as some other stuff -->
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+			<version>0.9.9</version>
+		</dependency>
+	</dependencies>
+</project>
